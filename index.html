@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f5f3eb">
+<meta name="description" content="Configura un prompt para crear apuntes desde fotos: clasificación, tablas, examen y tarjetas de repaso. Ejemplos de climas, inglés y francés.">
+<title>crear apuntes · instrucciones y ejemplos</title>
+<style>
+:root{--paper:#f5f3eb;--surface:#fffef9;--ink:#23443d;--muted:#5e7066;--line:#dce2d5;--green:#2e6459;--mint:#e8efdf;--gold:#f1c17b;font-family:"Trebuchet MS",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper)}
+*{box-sizing:border-box}body{margin:0;line-height:1.55}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.16;letter-spacing:-.035em}button,input,select,textarea{font:inherit}button,a,input,select,textarea,summary{outline-offset:4px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #bd7827}button{cursor:pointer;color:inherit;touch-action:manipulation}[hidden]{display:none!important}a{color:var(--green)}button,a{-webkit-tap-highlight-color:transparent}.wrap{width:min(1120px,100%);margin:auto;padding:25px 30px 45px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:21px;border-bottom:1px solid var(--line)}.brand{font-size:1.02rem;font-weight:800;letter-spacing:-.025em}.brand span{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;background:var(--gold);margin-right:8px}.top nav{display:flex;gap:19px;flex-wrap:wrap}.top a{min-height:44px;display:inline-flex;align-items:center;font-size:.85rem;text-decoration:none}.top a:hover{text-decoration:underline}
+.hero{padding:35px 0 28px;max-width:760px}.eyebrow{font-size:.72rem;text-transform:uppercase;font-weight:800;letter-spacing:.11em;color:var(--muted);margin-bottom:10px}h1{font-size:clamp(2rem,5vw,3.15rem);max-width:700px}.hero p{margin-top:15px;max-width:680px;color:var(--muted);font-size:1.02rem}.route{display:flex;gap:7px 17px;flex-wrap:wrap;margin-top:19px;font-size:.8rem;color:var(--green);font-weight:700}
+.main-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}.panel{background:var(--surface);border:1px solid var(--line);border-radius:21px;padding:25px;min-width:0}.panel h2,.examples h2{font-size:1.4rem}.intro{font-size:.88rem;color:var(--muted);margin-top:8px}.presets{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 21px}.presets button{border:1px solid var(--line);background:transparent;border-radius:11px;min-height:44px;padding:9px 12px;font-size:.85rem;font-weight:700}.presets button[aria-pressed=true]{background:var(--mint);border-color:#b5c7ac}.fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:6px;min-width:0}.field.full{grid-column:1/-1}label,.field-label{font-size:.8rem;font-weight:700}input,select{width:100%;min-width:0;min-height:45px;padding:10px 11px;border:1px solid #becbbb;border-radius:9px;background:#fff;color:var(--ink);font-size:.95rem}fieldset{margin:20px 0 0;padding:17px 0 0;border:0;border-top:1px solid var(--line);min-width:0}legend{padding:0 6px 0 0;font-weight:700;font-size:.85rem}.field-note{font-size:.79rem;color:var(--muted);margin-top:15px}
+.output{background:var(--mint)}.output .intro{min-height:25px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:19px}.btn{min-height:46px;padding:11px 17px;border:1px solid var(--green);border-radius:11px;background:var(--green);color:white;font-weight:700;font-size:.88rem}.btn.alt{background:transparent;color:var(--ink);border-color:#b5c5af}.btn:hover{filter:brightness(.97)}.status{font-size:.84rem;min-height:3em;line-height:1.45;padding-top:12px}.steps{margin:15px 0 0;padding-left:20px;color:var(--muted);font-size:.87rem}.steps li{margin:6px 0}details{margin-top:18px;border-top:1px solid #c8d4c0;padding-top:15px}summary{min-height:44px;cursor:pointer;font-weight:700;font-size:.86rem}textarea{display:block;width:100%;min-height:370px;margin-top:10px;resize:vertical;border:1px solid #b4c3ad;border-radius:10px;padding:14px;background:#fffefa;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.8rem;line-height:1.55}.read-link{margin-top:16px;font-size:.83rem}.read-link a{display:inline-block;padding:7px 0}
+.examples{margin-top:32px;padding-top:29px;border-top:1px solid var(--line)}.examples-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}.examples-head .field{width:190px;flex:none}.example-layout{display:grid;grid-template-columns:.65fr 1.35fr;gap:25px;align-items:start}.example-guide{padding:12px 4px 0 0}.example-guide p{font-size:.9rem;color:var(--muted);margin-top:11px}.example-guide strong{color:var(--ink)}.flashcard{border:1px solid #d7ddcf;border-radius:21px;background:var(--surface);padding:25px 28px;min-width:0}.card-meta{font-size:.73rem;color:var(--muted);margin-bottom:20px}.flashcard h3{font-size:clamp(1.3rem,3vw,1.8rem);line-height:1.3;min-height:65px}.reveal{margin-top:21px;background:var(--gold);border-color:#d9ad6b;color:var(--ink)}.answer{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}.answer strong{font-size:1.6rem;line-height:1.3}.answer p{font-size:.9rem;color:var(--muted);margin-top:10px}.card-nav{display:flex;justify-content:space-between;gap:12px;margin-top:23px}.card-nav button{min-height:44px;border:0;background:transparent;font-size:.87rem;font-weight:700;padding:8px 0}.footer{border-top:1px solid var(--line);margin-top:35px;padding-top:20px;color:var(--muted);font-size:.81rem;display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}.footer a{display:inline-flex;min-height:44px;align-items:center}.footer p{max-width:720px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:850px){.wrap{padding:20px 23px 35px}.main-grid{gap:17px}.panel{padding:21px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.example-layout{grid-template-columns:.7fr 1.3fr;gap:20px}.actions .btn{width:100%}}
+@media(max-width:640px){.wrap{padding:17px 17px 30px}.top{align-items:flex-start;gap:12px;flex-direction:column;padding-bottom:14px}.top nav{gap:20px}.top a{font-size:.83rem}.hero{padding:27px 0 24px}.hero p{font-size:.93rem}.route{font-size:.74rem;gap:6px 13px}.main-grid,.example-layout{grid-template-columns:1fr}.panel{padding:21px 19px;border-radius:18px}.fields{grid-template-columns:1fr 1fr;gap:13px}.field.full{grid-column:1/-1}input,select{font-size:16px}.examples{margin-top:26px;padding-top:24px}.examples-head{align-items:start;flex-direction:column;gap:16px}.examples-head .field{width:100%}.example-guide{padding:0}.example-guide p{font-size:.86rem;margin-top:8px}.flashcard{padding:22px 21px}.flashcard h3{min-height:55px}.footer{margin-top:27px;gap:6px}.status{min-height:3em}textarea{font-size:14px}.brand{font-size:1rem}}
+@media(max-width:370px){.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.presets{gap:6px}.presets button{font-size:.79rem;padding:9px 10px}.wrap{padding-left:13px;padding-right:13px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <div class="brand"><span aria-hidden="true">{ }</span>crear apuntes</div>
+ <nav aria-label="Recursos"><a href="https://ricardoyf.github.io/clima/">Ver el tema de climas</a><a href="./prompt.md">Instrucciones para agentes</a></nav>
+</header>
+<section class="hero">
+ <div class="eyebrow">A partir de las fotos de una lección</div>
+ <h1>Crear apuntes desde fotos.</h1>
+ <p>Elige el tema y copia unas instrucciones completas para tu agente. Empezarán por clasificar y comparar, y continuarán con explicaciones, juegos y tarjetas de repaso.</p>
+ <div class="route" aria-label="Orden de estudio"><span>Clasificar</span><span>Comparar</span><span>Explicar</span><span>Practicar</span><span>Repasar</span></div>
+</section>
+<main>
+<div class="main-grid">
+<section class="panel" aria-labelledby="config-title">
+ <h2 id="config-title">1. Configura la lección</h2>
+ <p class="intro">Empieza con un ejemplo o escribe tu propio tema.</p>
+ <div class="presets" role="group" aria-label="Ejemplos de configuración">
+  <button type="button" data-preset="climates" aria-pressed="true">Los climas</button>
+  <button type="button" data-preset="english" aria-pressed="false">Inglés</button>
+  <button type="button" data-preset="french" aria-pressed="false">Francés</button>
+ </div>
+ <form id="config-form" autocomplete="off">
+  <div class="fields">
+   <div class="field full"><label for="mode">Tipo de aprendizaje</label><select id="mode"><option value="subject">Asignatura</option><option value="language">Idiomas</option></select></div>
+   <div class="field"><label for="subject">Asignatura</label><input id="subject" maxlength="100" value="Ciencias"></div>
+   <div class="field"><label for="age">Edad o curso</label><input id="age" maxlength="60" value="9 años"></div>
+   <div class="field full"><label for="topic">Tema</label><input id="topic" maxlength="160" value="Los climas"></div>
+   <div class="field"><label for="source">Idioma del material</label><select id="source"><option value="gl">Galego</option><option value="es">Castellano</option><option value="en">English</option><option value="fr">Français</option></select></div>
+   <div class="field"><label for="initial">Idioma inicial de los apuntes</label><select id="initial"><option value="gl">Galego</option><option value="es">Castellano</option><option value="en">English</option></select></div>
+  </div>
+  <fieldset id="language-fields" hidden>
+   <legend>La lengua que se estudia</legend>
+   <div class="fields">
+    <div class="field"><label for="target">Lengua objetivo</label><select id="target"><option value="en">Inglés</option><option value="fr">Francés</option></select></div>
+    <div class="field"><label for="support">Lengua de apoyo</label><select id="support"><option value="es">Castellano</option><option value="gl">Galego</option></select></div>
+    <div class="field full"><label for="direction">Qué practicar</label><select id="direction"><option value="both">Comprender y expresarse</option><option value="understand">Comprender la lengua estudiada</option><option value="produce">Expresarse en la lengua estudiada</option></select></div>
+   </div>
+   <p class="field-note">El idioma de los botones puede cambiar. La lengua que se practica y la dirección de cada tarjeta se mantienen.</p>
+  </fieldset>
+ </form>
+ <p class="field-note">Esta página prepara instrucciones. Las fotos se adjuntan al agente que vaya a crear los apuntes.</p>
+</section>
+<section class="panel output" aria-labelledby="output-title">
+ <h2 id="output-title">2. Llévalo a tu agente</h2>
+ <p class="intro" id="prompt-summary"></p>
+ <div class="actions"><button type="button" class="btn" id="copy-prompt">Copiar prompt completo</button><button type="button" class="btn alt" id="download-prompt">Descargar .md</button></div>
+ <p id="prompt-status" class="status" role="status" aria-live="polite"></p>
+ <ol class="steps"><li>Copia las instrucciones o descarga el archivo.</li><li>Pégalas en la conversación con tu agente.</li><li>Adjunta las fotos de la lección.</li></ol>
+ <details id="prompt-details"><summary>Ver el prompt completo</summary><label class="sr-only" for="prompt-output">Instrucciones completas para copiar</label><textarea id="prompt-output" readonly spellcheck="false"></textarea></details>
+ <p class="read-link"><a href="./prompt.md">Leer las instrucciones maestras en Markdown</a></p>
+</section>
+</div>
+<section class="examples" aria-labelledby="examples-title">
+ <div class="examples-head"><div><div class="eyebrow">Una pista. Una respuesta.</div><h2 id="examples-title">Prueba una tarjeta de repaso</h2></div><div class="field"><label for="demo-subject">Ejemplos</label><select id="demo-subject"><option value="climates">Climas</option><option value="english">Inglés</option><option value="french">Francés</option></select></div></div>
+ <div class="example-layout">
+  <div class="example-guide"><p><strong>Piensa antes de abrir.</strong> Intenta decir la respuesta y después compruébala.</p><p>En los apuntes, las tarjetas sirven para repasar asociaciones breves. En idiomas, comprender una expresión y saber decirla son objetivos distintos.</p><p>Estos ejemplos muestran el anverso y el reverso de las tarjetas. Son una demostración sin calendario de repaso.</p></div>
+  <article class="flashcard">
+   <p class="card-meta" id="demo-count"></p><h3 id="demo-front" aria-live="polite"></h3>
+   <button type="button" class="btn reveal" id="demo-reveal" aria-expanded="false" aria-controls="demo-answer">Mostrar respuesta</button>
+   <div class="answer" id="demo-answer" hidden aria-live="polite"><strong id="demo-back"></strong><p id="demo-note"></p></div>
+   <div class="card-nav"><button type="button" id="demo-prev">← Anterior</button><button type="button" id="demo-next">Siguiente →</button></div>
+  </article>
+ </div>
+</section>
+</main>
+<footer class="footer"><p>Las instrucciones conservan la clasificación, detectan patrones y proponen actividades de dificultad progresiva. El HTML de los apuntes debe poder guardarse y usarse sin conexión.</p><a href="./prompt.md" download="instrucciones-apuntes.md">Descargar instrucciones para agentes</a></footer>
+<noscript><p>Activa JavaScript para configurar el prompt y probar las tarjetas. También puedes <a href="./prompt.md">leer las instrucciones completas</a>.</p></noscript>
+</div>
+<script>const MASTER_PROMPT="Convierte las fotos de esta lección en unos apuntes interactivos con juego y examen dentro de un único archivo HTML. Deben servir para estudiar ahora y recuperarlos en cursos posteriores.\n\nAsignatura y tema: [INDICAR]\nCurso o edad: [INDICAR]\nRepositorio o página existente, si corresponde: [INDICAR]\n\nPRIORIDAD ABSOLUTA: PRIMERO CLASIFICAR; DESPUÉS PROFUNDIZAR\n\n1. Fidelidad al material\n\nLee todas las fotos antes de diseñar. Conserva conceptos, clasificaciones, relaciones, ejemplos y vocabulario esencial. No inventes datos ni omitas información necesaria para el examen. Si algo no se lee, señala el fragmento y pide una imagen mejor; avanza con las partes legibles.\n\nDistingue categorías, subcategorías, propiedades y ejemplos. No los pongas al mismo nivel. Si el tema se organiza por partes, etapas, procesos o relaciones, respeta esa estructura. No fuerces una clasificación artificial. Si hay un HTML anterior, conserva su contenido correcto y el progreso guardado.\n\n2. Primera pestaña y pantalla inicial: «Mapa mental»\n\nAntes de las palabras clave, el niño debe ver dónde pertenece cada cosa.\n\nCrea un esquema con llaves desplegables. Al principio muestra solo el tema y sus grandes grupos. Al tocar un grupo, aparecen únicamente los nombres de sus elementos. Sin definiciones, párrafos, pistas ni dibujos que recarguen esta vista.\n\nEjemplo para la lección de climas:\n— Climas templados: Mediterráneo, Oceánico, Continental.\n— Climas cálidos: Ecuatorial, Tropical seco, Desértico.\n— Climas fríos: Polar, Altas montañas.\n\n«Tropical seco» es un solo tipo. Adapta los grupos y el número de elementos al tema real; no copies los del ejemplo a otras asignaturas.\n\nIncluye «Ver clasificación completa», «Cerrar todo» e «Imprimir mapa». Ver la clasificación completa abre todos los grupos y muestra solo nombres. Cerrar un grupo elimina sus detalles abiertos, para que vuelva a mostrar solo nombres al reabrirse.\n\nAl tocar un concepto, permite profundizar progresivamente:\nnombre → palabras clave → frase → explicación → relación.\n\nMantén visible su pertenencia al grupo. Permite retroceder y abrir la ficha correspondiente.\n\n3. Detecta los patrones y conviértelos en ejercicios\n\nAdemás de clasificar, identifica por iniciativa propia qué aspectos se repiten al describir los elementos: propiedades, funciones, causas, consecuencias, etapas, ejemplos, semejanzas o diferencias.\n\nSi varios elementos comparten las mismas características de descripción, crea una tabla comparativa. Las filas serán los elementos y las columnas los aspectos comunes. Conserva las categorías y usa pocas palabras por celda. Por ejemplo: climas en las filas; temperaturas, precipitaciones y vegetación en las columnas. Confirma el patrón en el material y no impongas esas columnas a otros temas.\n\nCuando la fuente no dé un dato, escribe «No se indica en la lección». No lo inventes ni lo conviertas en una pregunta.\n\nIncluye una pestaña de tabla con estudio y cuatro actividades progresivas: completar encabezados de columnas, nombres de filas, algunos datos y una mezcla. Antes de generar huecos, conserva pistas suficientes; una fila cuyo nombre esté oculto debe mantener los datos necesarios para reconocerla. Acepta respuestas equivalentes, sin penalizar etiquetas idénticas por proceder de filas distintas.\n\nBaraja filas dentro de sus grupos y columnas junto con sus datos. Mantén el orden y las respuestas al cambiar de idioma. No reveles respuestas en placeholders o etiquetas accesibles.\n\nOfrece práctica con reintentos, examen con corrección final y un examen imprimible con solucionario en otra página. Guarda el progreso de las tablas por separado del juego de fichas. Explica qué patrón has detectado y para qué sirve.\n\n4. Apuntes en cuatro escalones\n\nLa clasificación es la entrada a estos cuatro escalones:\n\n1.º Palabras: las mínimas palabras clave necesarias, normalmente entre tres y seis.\n2.º Frase: una oración breve que conecte esas palabras.\n3.º Explicación: unas pocas frases con las ideas esenciales.\n4.º Relación: comparar, justificar, aplicar o conectar conceptos.\n\nNo elimines distinciones esenciales para reducir palabras. Cada nivel debe añadir comprensión, sin convertir un resumen breve en una afirmación falsa.\n\nUsa dibujos sencillos cuando ayuden a entender. Una idea por ficha, letras claras, botones cómodos y poco ruido visual.\n\n5. Juego y examen\n\nRelaciona cada ejercicio con lo estudiado en su nivel:\n— Palabras: reconocer, clasificar y recordar.\n— Frase: ordenar o completar una frase breve.\n— Explicación: expresar varias ideas.\n— Relación: comparar, explicar causas o aplicar lo aprendido.\n\nIncluye rondas cortas y una opción de repaso del tema completo, con cobertura de todos los conceptos. En práctica, muestra la corrección tras cada respuesta; en examen, al terminar. Ofrece explicación breve, repaso de errores y progreso, sin una cuenta atrás obligatoria.\n\nCorrige automáticamente las preguntas cerradas. Para respuestas abiertas, muestra una respuesta orientativa y una lista de ideas para autoevaluarse. Identifica claramente esta autoevaluación. No simules comprender respuestas libres mediante coincidencias de palabras.\n\n6. Tarjetas de repaso tipo Anki\n\nAñade una pestaña «Tarjetas» para recordar una respuesta antes de verla. Genera las tarjetas a partir de la lección: palabras asociadas, conceptos, características distintivas, pertenencia a grupos y relaciones importantes. Una tarjeta debe evaluar una sola idea, con un anverso breve y un reverso que incluya la respuesta y, cuando ayude, una explicación de una frase.\n\nEjemplos de climas:\n— «Taiga: ¿qué clima?» → «Continental».\n— «Sabana: ¿qué clima?» → «Tropical seco».\n— «¿En qué clima cálido se concentran las lluvias en una estación?» → «Tropical seco».\n\nEvita pistas ambiguas. «Llueve mucho» puede corresponder a varios climas: añade información suficiente o acepta todas las respuestas válidas. No inviertas automáticamente las tarjetas; comprueba que la pregunta inversa también tenga una respuesta clara. No reveles respuestas con dibujos, categorías, colores, etiquetas accesibles o pistas involuntarias en el anverso.\n\nFuncionamiento:\n— Mostrar una tarjeta cada vez, con la respuesta oculta.\n— Invitar a pensar o responder en voz alta, sin exigir micrófono.\n— Ofrecer «Mostrar respuesta».\n— Solo entonces permitir autoevaluarse: «Otra vez», «Difícil», «Bien» o «Fácil».\n— Repetir las tarjetas olvidadas durante la sesión y programar repasos posteriores mediante intervalos sencillos.\n— Mostrar el siguiente intervalo y guardar el progreso por tarjeta.\n\nExplica la regla de intervalos utilizada, incluidos los reinicios tras un olvido y el máximo de repeticiones. Identifica la actividad como repaso tipo Anki y la valoración como autoevaluación; no afirmes que es el algoritmo oficial de Anki ni que se ha corregido automáticamente una respuesta oral. Cada control debe cambiar realmente la programación. No prometas avisos si la página solo muestra los repasos al abrirse.\n\nIncluye rondas breves, repaso de pendientes antes de tarjetas nuevas y práctica libre. La práctica libre no modifica fechas ni estadísticas del repaso programado. Conserva la tarjeta, la cola, el reverso y el progreso al cambiar de idioma, pausar o recargar. Evita calificar dos tarjetas por una doble pulsación. Una ronda terminada puede dejar tarjetas pendientes; no lo presentes como «todo aprendido».\n\nGuarda fechas de calendario local válidas; comprueba cambios de mes y año. Incluye tarjetas y sesiones en la copia de progreso. Al importar, conserva la revisión más reciente: una fecha futura más lejana no equivale a mayor aprendizaje y no debe borrar un olvido reciente. Acepta las copias antiguas que no tengan tarjetas.\n\nOfrece impresión y, si incluyes «Exportar a Anki», genera un archivo real de texto UTF-8 con dos campos, anverso y reverso, compatible con la importación de Anki. Explica cómo importarlo; no lo llames archivo .apkg si no lo es. El calendario del HTML y el de Anki son independientes.\n\nPara temas de idiomas, separa el idioma de la interfaz de los idiomas de pregunta y respuesta. Crea intencionadamente comprensión y producción; cada dirección y lengua de estudio tiene su propio ID y su propio progreso. Cambiar la interfaz no debe traducir la palabra extranjera que se está aprendiendo.\n\nEjemplos:\n— Castellano → inglés: «Hace frío» → «It's cold»; también es válida «It is cold».\n— Inglés → castellano: «It's cold» → «Hace frío».\n— Castellano → francés: «la casa» → «la maison».\n— Francés → castellano: «la maison» → «la casa».\n— Una frase más: «La casa es pequeña» → «La maison est petite».\n\nIncluye artículos y género cuando sean relevantes, especialmente en francés, y frases breves con contexto. Acepta traducciones alternativas correctas. No elimines contexto para conseguir respuestas artificialmente únicas.\n\n7. Tres idiomas completos\n\nIncluye Galego, Castellano y English, con gallego inicial salvo que yo indique otro idioma.\n\nTraduce naturalmente todo: clasificación, apuntes, dibujos con texto, botones, preguntas, opciones, explicaciones, rúbricas, resultados e impresión. Mantén las mismas ideas, ejercicios y dificultad.\n\nCambiar de idioma conserva el mapa abierto, el ejercicio, las respuestas, el orden de opciones y el progreso. Usa identificadores comunes. Las frases ordenables deben resultar naturales y coincidir exactamente con la frase estudiada en cada idioma.\n\n8. Impresión\n\nOfrece estas salidas distintas:\n— Mapa mental: clasificación completa desplegada, solo categorías y nombres, con sus llaves.\n— Apuntes: clasificación al principio y todas las fichas del nivel elegido, agrupadas bajo sus categorías escritas.\n— Tabla comparativa: todos los elementos y sus características.\n— Examen de tabla: los huecos de la actividad seleccionada, con solucionario en otra página.\n— Tarjetas: pistas y respuestas, para recortar o plegar y repasar sin pantalla.\n\nLa impresión usa el idioma seleccionado. Los apartados plegados no desaparecen del papel. Conserva la jerarquía y la categoría de cada ficha; el color nunca debe ser la única pista. No confundas los apuntes de palabras clave con el contenido de los niveles superiores.\n\nDiseña para A4 y blanco y negro. Evita cortar fichas o separar títulos de su contenido. Si incluyes un examen imprimible, coloca el solucionario aparte.\n\n9. Conservación y accesibilidad\n\nEntrega un HTML autónomo con CSS, JavaScript, datos y dibujos incorporados, sin dependencias externas necesarias para funcionar. Debe abrirse sin conexión.\n\nIncluye descarga del HTML, progreso local y exportación e importación de una copia del progreso. Valida las importaciones. Conserva el progreso anterior al actualizar. Centraliza contenidos y traducciones para ampliarlo otros años.\n\nAdapta el diseño a móvil y ordenador, con teclado, botones accesibles, buen contraste y textos legibles.\n\n10. Revisión y entrega\n\nPrueba desplegables, niveles, ejercicios, traducciones, impresión y conservación del progreso. En tarjetas, verifica el ocultamiento de respuestas, los intervalos, las repeticiones, la práctica libre, los cambios de idioma, la recarga y las copias de progreso. Comprueba que todas las categorías y conceptos de las fotos estén representados y que cada pregunta pueda responderse con lo estudiado.\n\nEntrega el HTML completo descargable y explica brevemente cómo usarlo. Si pido actualizar GitHub, publica la versión, verifica su despliegue y dame el enlace. Usa nombres nuevos y enlaces en minúsculas.\n\nDistingue lo que has verificado en el código de lo que has comprobado visualmente. No afirmes haber publicado o probado algo que no hayas podido verificar.";
+const PORTAL_API=(function portalApp(){
+  const $=id=>document.getElementById(id),names={gl:"gallego",es:"castellano",en:"inglés",fr:"francés"};
+  const presets={
+   climates:{mode:"subject",subject:"Ciencias",topic:"Los climas",age:"9 años",source:"gl",initial:"gl",target:"en",support:"es",direction:"both"},
+   english:{mode:"language",subject:"Inglés",topic:"Vocabulario y frases de uso cotidiano",age:"9 años",source:"en",initial:"es",target:"en",support:"es",direction:"both"},
+   french:{mode:"language",subject:"Francés",topic:"Objetos cotidianos y frases breves",age:"9 años",source:"fr",initial:"es",target:"fr",support:"es",direction:"both"}
+  };
+  const demos={
+   climates:[
+    {id:"climate-taiga-to-climate",front:"Taiga. ¿Qué clima de esta lección?",back:"Continental.",note:"La lección asocia la taiga y las estepas al clima continental."},
+    {id:"climate-savanna-to-climate",front:"Sabana. ¿Qué clima de esta lección?",back:"Tropical seco.",note:"La sabana se relaciona con lluvias concentradas en una estación."},
+    {id:"climate-seasonal-rain-to-climate",front:"Lluvias concentradas en una estación. ¿Qué clima cálido?",back:"Tropical seco.",note:"La pista es cuándo se concentra la lluvia."}
+   ],
+   english:[
+    {id:"en-weather-es-to-en",front:"Di «Hace frío» en inglés.",back:"It's cold.",note:"También es válida la forma completa: «It is cold»."},
+    {id:"en-weather-en-to-es",front:"¿Qué significa «It's cold»?",back:"Hace frío.",note:"Esta tarjeta practica la comprensión de la expresión."}
+   ],
+   french:[
+    {id:"fr-house-es-to-fr",front:"Di «la casa» en francés.",back:"La maison.",note:"Maison es femenino: aprende el nombre junto con su artículo."},
+    {id:"fr-house-fr-to-es",front:"¿Qué significa «la maison»?",back:"La casa.",note:"El artículo forma parte del vocabulario que se repasa."},
+    {id:"fr-small-house-fr-to-es",front:"¿Qué significa «La maison est petite»?",back:"La casa es pequeña.",note:"Petite concuerda con maison, que es femenino."}
+   ]
+  };
+  let demoIndex=0,revealed=false,currentPrompt="";
+  const clean=x=>String(x||"").trim().replace(/\s+/g," ").slice(0,160);
+  function readConfig(){const c={};for(const key of Object.keys(presets.climates))c[key]=clean($(key).value);return c;}
+  function makePrompt(c){
+   const subject=c.subject||"[indicar asignatura]",topic=c.topic||"[indicar tema]",age=c.age||"[indicar edad o curso]";
+   const context=["# Contexto del encargo","","Modalidad: "+(c.mode==="language"?"aprendizaje de idiomas":"asignatura"),"Asignatura: "+subject,"Tema: "+topic,"Edad o curso: "+age,"Idioma del material: "+(names[c.source]||c.source),"Idioma inicial de los apuntes: "+(names[c.initial]||c.initial),"Interfaces disponibles: Galego, Castellano y English."];
+   let adaptation="";
+   if(c.mode==="language"){
+    const target=names[c.target]||c.target,support=names[c.support]||c.support;
+    const direction=c.direction==="understand"?"comprensión: de "+target+" a "+support:c.direction==="produce"?"producción: de "+support+" a "+target:"ambas direcciones, en tarjetas independientes";
+    context.push("Lengua que se estudia: "+target,"Lengua de apoyo: "+support,"Objetivo de las tarjetas: "+direction);
+    adaptation=[
+     "# Adaptación para este tema de idiomas",
+     "Distingue el idioma de la interfaz de la lengua estudiada. La traducción de los botones y las instrucciones no cambia la respuesta objetivo ni la dirección de las tarjetas.",
+     "Practica "+direction+". Identifica cada tarjeta por un ID estable que incluya la dirección y la lengua que se aprende; conserva su progreso por separado. Si se practican ambas, comprueba cada anverso y reverso de forma independiente; no inviertas automáticamente todas las asociaciones.",
+     "Registra la lengua del anverso, la del reverso y el objetivo: comprensión, producción o uso en contexto. Incluye artículos y género cuando formen parte del aprendizaje, especialmente en francés.",
+     "Usa frases breves y naturales. Añade contexto cuando haya varias traducciones posibles y acepta las variantes que correspondan. Mantén el vocabulario objetivo y la dificultad al cambiar la interfaz.",
+     "Adapta la clasificación y las tablas a lo que realmente contenga la lección: por ejemplo, funciones comunicativas, temas de vocabulario o patrones gramaticales. Usa únicamente el material proporcionado y los ejemplos autorizados."
+    ].join("\n\n");
+   }else adaptation="# Adaptación para esta asignatura\n\nTraduce los apuntes y ejercicios a Galego, Castellano y English con ideas y dificultad equivalentes. Conserva el idioma inicial indicado. Detecta los grupos y patrones propios de las fotos; no copies las categorías de los ejemplos si no pertenecen al tema.";
+   return context.join("\n")+"\n\nLos datos de este contexto completan los marcadores y los valores por defecto de las instrucciones siguientes. Conserva todas las instrucciones maestras y aplica la adaptación específica de este encargo.\n\n# Instrucciones maestras\n\n"+MASTER_PROMPT+"\n\n"+adaptation+"\n";
+  }
+  function update(){
+   const c=readConfig();$("language-fields").hidden=c.mode!=="language";currentPrompt=makePrompt(c);$("prompt-output").value=currentPrompt;
+   $("prompt-summary").textContent=(c.topic||"Tu próxima lección")+" · "+(c.age||"edad por indicar")+" · "+(c.mode==="language"?"idiomas":"asignatura");$("prompt-status").textContent="";
+  }
+  function applyPreset(key){
+   const p=presets[key];if(!p)return;
+   for(const [field,value]of Object.entries(p))$(field).value=value;
+   document.querySelectorAll("[data-preset]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.preset===key)));
+   $("demo-subject").value=key;demoIndex=0;revealed=false;showDemo();update();
+  }
+  async function copyPrompt(){
+   const text=currentPrompt;
+   try{if(!navigator.clipboard||typeof navigator.clipboard.writeText!=="function")throw Error("clipboard unavailable");await navigator.clipboard.writeText(text);$("prompt-status").textContent="Prompt copiado. Pégalo en tu agente y adjunta las fotos.";}
+   catch(error){$("prompt-details").open=true;const area=$("prompt-output");area.focus();area.select();if(area.setSelectionRange)area.setSelectionRange(0,area.value.length);$("prompt-status").textContent="Texto seleccionado. Usa «Copiar» en tu dispositivo o Ctrl+C.";}
+  }
+  function downloadPrompt(){
+   const topic=readConfig().topic.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,70)||"apuntes";
+   const blob=new Blob([currentPrompt],{type:"text/markdown;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
+   a.href=url;a.download="prompt-"+topic+".md";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);$("prompt-status").textContent="Archivo preparado para descargar.";
+  }
+  function showDemo(){
+   const cards=demos[$("demo-subject").value]||demos.climates;demoIndex=(demoIndex+cards.length)%cards.length;const card=cards[demoIndex];
+   $("demo-front").textContent=card.front;$("demo-back").textContent=card.back;$("demo-note").textContent=card.note;$("demo-count").textContent="Ejemplo "+(demoIndex+1)+" de "+cards.length;$("demo-answer").hidden=!revealed;
+   $("demo-reveal").textContent=revealed?"Ocultar respuesta":"Mostrar respuesta";$("demo-reveal").setAttribute("aria-expanded",String(revealed));
+  }
+  $("config-form").addEventListener("submit",e=>e.preventDefault());
+  $("config-form").addEventListener("input",()=>{document.querySelectorAll("[data-preset]").forEach(b=>b.setAttribute("aria-pressed","false"));update();});
+  $("config-form").addEventListener("change",update);
+  document.querySelectorAll("[data-preset]").forEach(b=>b.addEventListener("click",()=>applyPreset(b.dataset.preset)));
+  $("copy-prompt").addEventListener("click",copyPrompt);$("download-prompt").addEventListener("click",downloadPrompt);
+  $("demo-subject").addEventListener("change",()=>{demoIndex=0;revealed=false;showDemo();});
+  $("demo-reveal").addEventListener("click",()=>{revealed=!revealed;showDemo();});
+  $("demo-prev").addEventListener("click",()=>{demoIndex--;revealed=false;showDemo();});
+  $("demo-next").addEventListener("click",()=>{demoIndex++;revealed=false;showDemo();});
+  applyPreset("climates");
+  return {makePrompt,readConfig,applyPreset,copyPrompt,downloadPrompt,showDemo,demos,getPrompt:()=>currentPrompt};
+ })();</script>
+</body>
+</html>
