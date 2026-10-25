@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#14213d">
+  <title>Mis páginas · Ricardo</title>
+  <style>
+    :root{--navy:#14213d;--blue:#2463eb;--paper:#f5f7fb;--card:#fff;--ink:#172033;--muted:#62708a;--line:#dfe5ef;--shadow:0 12px 30px rgba(20,33,61,.09)}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .wrap{width:min(1060px,100%);margin:auto;padding:18px 16px 44px}
+    header{padding:26px 22px;border-radius:24px;background:linear-gradient(135deg,#14213d,#2352a2);color:#fff;box-shadow:var(--shadow)}
+    h1{margin:0 0 8px;font-size:clamp(30px,7vw,48px);line-height:1}
+    header p{margin:0;max-width:700px;line-height:1.55;color:#dce8ff}
+    .count{display:inline-block;margin-top:16px;padding:7px 11px;border:1px solid #ffffff35;border-radius:999px;background:#ffffff14;font-size:13px;font-weight:800}
+    section{margin-top:28px}
+    h2{margin:0 0 12px;font-size:19px;color:var(--navy)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:13px}
+    .card{display:flex;min-height:142px;padding:17px;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:19px;box-shadow:0 5px 16px rgba(20,33,61,.05);transition:transform .15s,box-shadow .15s,border-color .15s}
+    .card:hover,.card:focus-visible{transform:translateY(-2px);border-color:#adc4f4;box-shadow:var(--shadow);outline:none}
+    .icon{display:grid;place-items:center;flex:0 0 44px;height:44px;margin-right:12px;border-radius:13px;background:#edf3ff;font-size:23px}
+    .body{display:flex;flex-direction:column;min-width:0}
+    h3{margin:2px 0 6px;font-size:17px;line-height:1.15}
+    .desc{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+    .open{margin-top:auto;padding-top:11px;color:var(--blue);font-size:12px;font-weight:900}
+    .tag{display:inline-block;margin-left:5px;padding:3px 6px;border-radius:999px;background:#fff2d7;color:#915d00;font-size:10px;vertical-align:2px}
+    footer{margin-top:32px;text-align:center;color:var(--muted);font-size:12px}
+    @media(max-width:520px){.wrap{padding:12px 12px 36px}header{padding:23px 18px;border-radius:20px}.grid{grid-template-columns:1fr}.card{min-height:124px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Mis páginas</h1>
+      <p>Índice general para localizar y abrir todas mis páginas y aplicaciones web publicadas en GitHub Pages.</p>
+      <span class="count">13 accesos organizados</span>
+    </header>
+
+    <section>
+      <h2>Viajes y vida personal</h2>
+      <div class="grid">
+        <a class="card" href="https://ricardoyf.github.io/Roma/"><span class="icon">🏛️</span><span class="body"><h3>Roma 2026</h3><p class="desc">Guía familiar, rutas, lugares y planificación del viaje.</p><span class="open">Abrir página →</span></span></a>
+        <a class="card" href="https://ricardoyf.github.io/Vacaciones/"><span class="icon">🧳</span><span class="body"><h3>Planificador de vacaciones</h3><p class="desc">Organización y planificación de viajes.</p><span class="open">Abrir página →</span></span></a>
+        <a class="card" href="https://ricardoyf.github.io/clima/"><span class="icon">🌦️</span><span class="body"><h3>Clima</h3><p class="desc">Consulta meteorológica y previsiones.</p><span class="open">Abrir página →</span></span></a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Aprendizaje y juegos</h2>
+      <div class="grid">
+        <a class="card" href="https://ricardoyf.github.io/CodigoMorse/"><span class="icon">📻</span><span class="body"><h3>Código Morse</h3><p class="desc">Quiz interactivo con letras, palabras, audio y zona de estudio.</p><span class="open">Abrir página →</span></span></a>
+        <a class="card" href="https://ricardoyf.github.io/PaletaPintor/"><span class="icon">🎨</span><span class="body"><h3>Paleta del pintor</h3><p class="desc">Aprende a mezclar colores mediante retos interactivos.</p><span class="open">Abrir página →</span></span></a>
+        <a class="card" href="https://ricardoyf.github.io/SISTEMSOLAR/"><span class="icon">🪐</span><span class="body"><h3>Sistema solar</h3><p class="desc">Exploración visual de planetas y órbitas.</p><span class="open">Abrir página →</span></span></a>
+        <a class="card" href="https://ricardoyf.github.io/Roma/unit1/"><span class="icon">🇬🇧</span><span class="body"><h3>English Flashcards</h3><p class="desc">Tarjetas interactivas para estudiar inglés.</p><span class="open">Abrir página →</span></span></a>
+        <a class="card" href="https://ricardoyf.github.io/Roma/exam/"><span class="icon">📝</span><span class="body"><h3>Exam</h3><p class="desc">Aplicación de examen y repaso.</p><span class="open">Abrir página →</span></span></a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Comidas y organización</h2>
+      <div class="grid">
+        <a class="card" href="https://ricardoyf.github.io/mi-planificador/"><span class="icon">📅</span><span class="body"><h3>PlanComidas</h3><p class="desc">Plan semanal, catálogo de platos y lista de la compra.</p><span class="open">Abrir página →</span></span></a>
+        <a class="card" href="https://ricardoyf.github.io/Comidas/"><span class="icon">🍽️</span><span class="body"><h3>Comidas</h3><p class="desc">Vista semanal e histórico de menús familiares.</p><span class="open">Abrir página →</span></span></a>
+        <a class="card" href="https://ricardoyf.github.io/paprika/"><span class="icon">📖</span><span class="body"><h3>Recetas Paprika</h3><p class="desc">Recetario web y consulta de recetas.</p><span class="open">Abrir página →</span></span></a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Clínica dental</h2>
+      <div class="grid">
+        <a class="card" href="https://ricardoyf.github.io/ryf/"><span class="icon">🦷</span><span class="body"><h3>Web de la clínica</h3><p class="desc">Sitio web publicado de Ricardo Yagüe Facal.</p><span class="open">Abrir página →</span></span></a>
+        <a class="card" href="https://ricardoyf.github.io/ryfnueva/"><span class="icon">🧪</span><span class="body"><h3>Nueva web de la clínica <span class="tag">DESARROLLO</span></h3><p class="desc">Versión nueva en preparación y revisión.</p><span class="open">Abrir página →</span></span></a>
+      </div>
+    </section>
+
+    <footer>Índice general · v1.0</footer>
+  </main>
+</body>
+</html>
