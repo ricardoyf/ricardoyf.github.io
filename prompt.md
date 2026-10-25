@@ -1,147 +1,151 @@
-Convierte las fotos de esta lección en unos apuntes interactivos con juego y examen dentro de un único archivo HTML. Deben servir para estudiar ahora y recuperarlos en cursos posteriores.
+Crea, a partir de las fotos y documentos de esta lección, unos apuntes interactivos con estudio, práctica, examen y tarjetas de repaso dentro de un único archivo HTML. Deben servir ahora y poder recuperarse en cursos posteriores.
 
-Asignatura y tema: [INDICAR]
-Curso o edad: [INDICAR]
-Repositorio o página existente, si corresponde: [INDICAR]
+Asignatura: [INDICAR O DEDUCIR DE LAS FOTOS]
+Tema: [INDICAR O DEDUCIR DE LAS FOTOS]
+Curso o edad: [INDICAR SI SE CONOCE]
+Idioma del material: [DETECTAR EN LAS FOTOS SI NO SE INDICA]
+Idioma inicial de la interfaz: [GALLEGO, SALVO QUE SE INDIQUE OTRO]
+Repositorio o página de destino, si corresponde: [INDICAR]
 
-PRIORIDAD ABSOLUTA: PRIMERO CLASIFICAR; DESPUÉS PROFUNDIZAR
+PRIORIDAD: PRIMERO ORGANIZAR Y CLASIFICAR; DESPUÉS PROFUNDIZAR
 
-1. Fidelidad al material
+Esta es una plantilla independiente del temario. Conserva el método de estudio y adapta todo el contenido a la nueva lección. Obtén de las fuentes sus categorías, conceptos, relaciones, vocabulario, dibujos, preguntas, respuestas y tarjetas. Los ejemplos de un configurador o de trabajos anteriores no forman parte del material de estudio. No incorpores su contenido salvo petición expresa.
 
-Lee todas las fotos antes de diseñar. Conserva conceptos, clasificaciones, relaciones, ejemplos y vocabulario esencial. No inventes datos ni omitas información necesaria para el examen. Si algo no se lee, señala el fragmento y pide una imagen mejor; avanza con las partes legibles.
+1. Analiza la lección y respeta las fuentes
 
-Distingue categorías, subcategorías, propiedades y ejemplos. No los pongas al mismo nivel. Si el tema se organiza por partes, etapas, procesos o relaciones, respeta esa estructura. No fuerces una clasificación artificial. Si hay un HTML anterior, conserva su contenido correcto y el progreso guardado.
+Lee todas las fotos antes de diseñar. Identifica la materia, el alcance, los objetivos de aprendizaje y el vocabulario esencial. Conserva las clasificaciones, relaciones, ejemplos y condiciones necesarias para comprender y responder al examen.
+
+Distingue categorías, subcategorías, propiedades, ejemplos, etapas, causas, consecuencias, reglas y excepciones. No los sitúes al mismo nivel. No fijes de antemano el número de grupos, conceptos, fichas, filas, columnas, preguntas o tarjetas.
+
+No inventes datos para completar un esquema. Si una parte no se lee, señala el fragmento y pide una imagen mejor; avanza con lo legible. Si un dato no aparece, indícalo cuando sea relevante y no lo evalúes. No confundas «no se indica» con «no existe» o «no se aplica».
+
+Ajusta el lenguaje y la dificultad al curso indicado. Si falta ese dato, toma como referencia la complejidad del material y declara la suposición. Si se permite añadir aplicaciones o ejemplos propios, identifícalos y comprueba que solo requieren conocimientos ya explicados.
+
+Si actualizas la misma lección, conserva su contenido correcto y el progreso compatible. Para una materia o lección nueva, crea una identidad propia y evita arrastrar contenidos, rutas, nombres o progreso de otros temas.
 
 2. Primera pestaña y pantalla inicial: «Mapa mental»
 
-Antes de las palabras clave, el niño debe ver dónde pertenece cada cosa.
+Antes de desarrollar definiciones, muestra dónde pertenece cada idea.
 
-Crea un esquema con llaves desplegables. Al principio muestra solo el tema y sus grandes grupos. Al tocar un grupo, aparecen únicamente los nombres de sus elementos. Sin definiciones, párrafos, pistas ni dibujos que recarguen esta vista.
+Organiza el contenido según su estructura real: categorías y subcategorías, partes de un conjunto, etapas de un proceso, secuencia temporal, pasos de un procedimiento o relaciones entre conceptos. Usa llaves desplegables cuando expresen esa jerarquía. Si una secuencia o una relación necesita flechas u otro esquema breve, úsalo conservando el mapa como entrada al estudio.
 
-Ejemplo para la lección de climas:
-— Climas templados: Mediterráneo, Oceánico, Continental.
-— Climas cálidos: Ecuatorial, Tropical seco, Desértico.
-— Climas fríos: Polar, Altas montañas.
+Al principio muestra solo el tema y sus grandes apartados. Al tocar un apartado, aparecen únicamente los nombres de sus elementos, con las mínimas palabras necesarias. Las definiciones, los ejemplos y las explicaciones aparecen al profundizar.
 
-«Tropical seco» es un solo tipo. Adapta los grupos y el número de elementos al tema real; no copies los del ejemplo a otras asignaturas.
-
-Incluye «Ver clasificación completa», «Cerrar todo» e «Imprimir mapa». Ver la clasificación completa abre todos los grupos y muestra solo nombres. Cerrar un grupo elimina sus detalles abiertos, para que vuelva a mostrar solo nombres al reabrirse.
+Incluye «Ver esquema completo», «Cerrar todo» e «Imprimir mapa». El esquema completo abre todos los apartados y muestra solo categorías, etapas y nombres. Cerrar un apartado recoge también sus detalles, para que vuelva a mostrar solo nombres al reabrirse.
 
 Al tocar un concepto, permite profundizar progresivamente:
-nombre → palabras clave → frase → explicación → relación.
+nombre → palabras clave → frase o regla → explicación → relación o aplicación.
 
-Mantén visible su pertenencia al grupo. Permite retroceder y abrir la ficha correspondiente.
+Mantén visible su pertenencia y, cuando corresponda, su posición en el proceso. Permite retroceder y abrir la ficha correspondiente. Conserva los órdenes que tengan significado.
 
-3. Detecta los patrones y conviértelos en ejercicios
+3. Detecta los patrones y conviértelos en actividades
 
-Además de clasificar, identifica por iniciativa propia qué aspectos se repiten al describir los elementos: propiedades, funciones, causas, consecuencias, etapas, ejemplos, semejanzas o diferencias.
+Identifica por iniciativa propia qué se repite en la lección: propiedades, funciones, estructuras, procedimientos, reglas, causas, consecuencias, etapas, relaciones o tipos de ejemplo.
 
-Si varios elementos comparten las mismas características de descripción, crea una tabla comparativa. Las filas serán los elementos y las columnas los aspectos comunes. Conserva las categorías y usa pocas palabras por celda. Por ejemplo: climas en las filas; temperaturas, precipitaciones y vegetación en las columnas. Confirma el patrón en el material y no impongas esas columnas a otros temas.
+Cuando varios elementos puedan compararse mediante aspectos comunes, crea una tabla. Las filas y columnas deben proceder de ese patrón concreto. Conserva los grupos pertinentes y usa pocas palabras por celda. No presupongas qué aspectos tendrá cada materia.
 
-Cuando la fuente no dé un dato, escribe «No se indica en la lección». No lo inventes ni lo conviertas en una pregunta.
+Si una tabla no representa bien el contenido, usa una estructura adecuada: secuencia, procedimiento, correspondencias, esquema de relaciones u otra organización justificada. No inventes una tabla ni una pestaña vacía para cumplir un formato.
 
-Incluye una pestaña de tabla con estudio y cuatro actividades progresivas: completar encabezados de columnas, nombres de filas, algunos datos y una mezcla. Antes de generar huecos, conserva pistas suficientes; una fila cuyo nombre esté oculto debe mantener los datos necesarios para reconocerla. Acepta respuestas equivalentes, sin penalizar etiquetas idénticas por proceder de filas distintas.
+Cuando exista una tabla, ofrece actividades progresivas de encabezados, nombres de filas, datos y mezcla, siempre que cada actividad tenga sentido y conserve pistas suficientes. Si ocultas un nombre, deja los datos necesarios para identificarlo. Admite respuestas equivalentes y evita opciones indistinguibles con correcciones diferentes.
 
-Baraja filas dentro de sus grupos y columnas junto con sus datos. Mantén el orden y las respuestas al cambiar de idioma. No reveles respuestas en placeholders o etiquetas accesibles.
+En otras estructuras, adapta los huecos y actividades al patrón: recuperar nombres, completar pasos, ordenar elementos o explicar conexiones. Solo baraja elementos cuyo orden sea intercambiable. Respeta la cronología, la sintaxis, el orden de las operaciones y la posición significativa en procesos o diagramas.
 
-Ofrece práctica con reintentos, examen con corrección final y un examen imprimible con solucionario en otra página. Guarda el progreso de las tablas por separado del juego de fichas. Explica qué patrón has detectado y para qué sirve.
+Distingue ausencia de información, valor nulo y no aplicabilidad. No conviertas datos no indicados en preguntas. No reveles respuestas en marcadores de posición, etiquetas accesibles o detalles visuales del ejercicio.
+
+Mantén orden, selección y respuestas al cambiar la interfaz. Ofrece práctica con reintentos, examen con corrección final y una versión imprimible con soluciones aparte. Explica brevemente qué patrón se ha detectado y cómo ayuda a estudiar.
 
 4. Apuntes en cuatro escalones
 
-La clasificación es la entrada a estos cuatro escalones:
+Tras ubicar el contenido en el mapa, ofrece estos niveles:
 
-1.º Palabras: las mínimas palabras clave necesarias, normalmente entre tres y seis.
-2.º Frase: una oración breve que conecte esas palabras.
-3.º Explicación: unas pocas frases con las ideas esenciales.
-4.º Relación: comparar, justificar, aplicar o conectar conceptos.
+1.º Palabras: las mínimas palabras clave necesarias, normalmente entre tres y seis; incorpora símbolos o notación cuando aporten más precisión.
+2.º Frase o regla: una oración breve, una regla, una fórmula o un paso que conecte las ideas anteriores.
+3.º Explicación: unas pocas frases o pasos razonados con las ideas esenciales.
+4.º Relación o aplicación: comparar, justificar, explicar causas, resolver o aplicar lo aprendido a una situación.
 
-No elimines distinciones esenciales para reducir palabras. Cada nivel debe añadir comprensión, sin convertir un resumen breve en una afirmación falsa.
+Cada escalón añade comprensión. No elimines condiciones, excepciones, unidades, fechas relevantes, signos o distinciones esenciales para reducir palabras.
 
-Usa dibujos sencillos cuando ayuden a entender. Una idea por ficha, letras claras, botones cómodos y poco ruido visual.
+Una idea por ficha. Usa dibujos o diagramas sencillos cuando ayuden a entender. Mantén letras claras, botones cómodos, buen contraste y poco ruido visual.
 
-5. Juego y examen
+5. Juego y examen adaptados a la materia
 
-Relaciona cada ejercicio con lo estudiado en su nivel:
-— Palabras: reconocer, clasificar y recordar.
-— Frase: ordenar o completar una frase breve.
-— Explicación: expresar varias ideas.
-— Relación: comparar, explicar causas o aplicar lo aprendido.
+Cada pregunta debe corresponder a contenido explicado en su nivel. Elige la actividad según lo que se aprende: reconocer, clasificar, recordar, completar, ordenar, calcular, analizar, justificar o aplicar.
 
-Incluye rondas cortas y una opción de repaso del tema completo, con cobertura de todos los conceptos. En práctica, muestra la corrección tras cada respuesta; en examen, al terminar. Ofrece explicación breve, repaso de errores y progreso, sin una cuenta atrás obligatoria.
+No impongas el mismo tipo de ejercicio a todas las materias. Cuando haya operaciones o procedimientos, permite resolverlos y revisar sus pasos; cuando haya secuencias, conserva o evalúa su orden; cuando se estudie una estructura verbal, mantén el texto que se analiza.
 
-Corrige automáticamente las preguntas cerradas. Para respuestas abiertas, muestra una respuesta orientativa y una lista de ideas para autoevaluarse. Identifica claramente esta autoevaluación. No simules comprender respuestas libres mediante coincidencias de palabras.
+Incluye rondas cortas y una opción de repaso completo. Determina la cantidad a partir del alcance de la lección y garantiza cobertura de todos los conceptos importantes. En práctica, corrige tras cada respuesta; en examen, al terminar. Ofrece explicación breve, repaso de errores y progreso, sin cuenta atrás obligatoria.
+
+Corrige automáticamente solo lo que puedas comprobar de forma fiable. Admite equivalencias válidas, formatos numéricos apropiados, variantes de traducción y unidades cuando corresponda. No simules comprender respuestas libres mediante coincidencias de palabras.
+
+Para respuestas abiertas, presenta una respuesta orientativa y una lista breve de ideas o pasos para autoevaluarse. Identifica claramente esa autoevaluación y sus límites.
 
 6. Tarjetas de repaso tipo Anki
 
-Añade una pestaña «Tarjetas» para recordar una respuesta antes de verla. Genera las tarjetas a partir de la lección: palabras asociadas, conceptos, características distintivas, pertenencia a grupos y relaciones importantes. Una tarjeta debe evaluar una sola idea, con un anverso breve y un reverso que incluya la respuesta y, cuando ayude, una explicación de una frase.
+Añade una pestaña «Tarjetas» para recordar una respuesta antes de verla. Crea las tarjetas exclusivamente a partir de lo estudiado: término y significado, elemento y categoría, característica y concepto, causa y efecto, paso y función, regla y condición, símbolo y significado u otras asociaciones pertinentes.
 
-Ejemplos de climas:
-— «Taiga: ¿qué clima?» → «Continental».
-— «Sabana: ¿qué clima?» → «Tropical seco».
-— «¿En qué clima cálido se concentran las lluvias en una estación?» → «Tropical seco».
+Una tarjeta evalúa una sola idea. El anverso contiene una pista breve y suficiente; el reverso, la respuesta y, cuando ayude, una explicación de una frase. Mantén las condiciones necesarias para que sea correcta. Adapta la cantidad al material y evita duplicaciones sin utilidad.
 
-Evita pistas ambiguas. «Llueve mucho» puede corresponder a varios climas: añade información suficiente o acepta todas las respuestas válidas. No inviertas automáticamente las tarjetas; comprueba que la pregunta inversa también tenga una respuesta clara. No reveles respuestas con dibujos, categorías, colores, etiquetas accesibles o pistas involuntarias en el anverso.
+Si la pista admite varias respuestas, añade contexto o acepta todas las válidas. No inviertas automáticamente las tarjetas: comprueba que la pregunta inversa también sea clara. Evita pistas involuntarias en colores, dibujos, categorías o etiquetas accesibles.
 
 Funcionamiento:
 — Mostrar una tarjeta cada vez, con la respuesta oculta.
 — Invitar a pensar o responder en voz alta, sin exigir micrófono.
 — Ofrecer «Mostrar respuesta».
-— Solo entonces permitir autoevaluarse: «Otra vez», «Difícil», «Bien» o «Fácil».
-— Repetir las tarjetas olvidadas durante la sesión y programar repasos posteriores mediante intervalos sencillos.
+— Después permitir autoevaluarse: «Otra vez», «Difícil», «Bien» o «Fácil».
+— Repetir las tarjetas olvidadas durante la sesión y programar repasos posteriores.
 — Mostrar el siguiente intervalo y guardar el progreso por tarjeta.
 
-Explica la regla de intervalos utilizada, incluidos los reinicios tras un olvido y el máximo de repeticiones. Identifica la actividad como repaso tipo Anki y la valoración como autoevaluación; no afirmes que es el algoritmo oficial de Anki ni que se ha corregido automáticamente una respuesta oral. Cada control debe cambiar realmente la programación. No prometas avisos si la página solo muestra los repasos al abrirse.
+Explica la regla de intervalos, qué ocurre tras un olvido y el máximo de repeticiones. Cada control debe cambiar realmente la programación. Identifica el sistema como repaso tipo Anki con autoevaluación; no lo presentes como el algoritmo oficial ni como una corrección de respuestas orales. No prometas avisos si los repasos solo aparecen al abrir la página.
 
-Incluye rondas breves, repaso de pendientes antes de tarjetas nuevas y práctica libre. La práctica libre no modifica fechas ni estadísticas del repaso programado. Conserva la tarjeta, la cola, el reverso y el progreso al cambiar de idioma, pausar o recargar. Evita calificar dos tarjetas por una doble pulsación. Una ronda terminada puede dejar tarjetas pendientes; no lo presentes como «todo aprendido».
+Incluye sesiones breves, repaso de pendientes antes de nuevas y práctica libre. La práctica libre no modifica fechas ni estadísticas del repaso programado. Conserva tarjeta, cola, reverso y progreso al cambiar de idioma, pausar o recargar. Evita calificaciones duplicadas por una doble pulsación. Distingue terminar una ronda de recordar todas las tarjetas.
 
-Guarda fechas de calendario local válidas; comprueba cambios de mes y año. Incluye tarjetas y sesiones en la copia de progreso. Al importar, conserva la revisión más reciente: una fecha futura más lejana no equivale a mayor aprendizaje y no debe borrar un olvido reciente. Acepta las copias antiguas que no tengan tarjetas.
+Usa fechas de calendario válidas. Incluye tarjetas y sesiones en la copia de progreso. Al importar, respeta la revisión más reciente: una fecha futura más lejana no equivale a mayor aprendizaje ni debe borrar un olvido posterior. Acepta versiones anteriores compatibles que no tengan tarjetas.
 
-Ofrece impresión y, si incluyes «Exportar a Anki», genera un archivo real de texto UTF-8 con dos campos, anverso y reverso, compatible con la importación de Anki. Explica cómo importarlo; no lo llames archivo .apkg si no lo es. El calendario del HTML y el de Anki son independientes.
+Ofrece tarjetas imprimibles. Si incluyes «Exportar a Anki», genera un archivo real de texto UTF-8 con dos campos, anverso y reverso, compatible con su importación. Explica su uso y distingue la exportación de contenido del calendario de repaso.
 
-Para temas de idiomas, separa el idioma de la interfaz de los idiomas de pregunta y respuesta. Crea intencionadamente comprensión y producción; cada dirección y lengua de estudio tiene su propio ID y su propio progreso. Cambiar la interfaz no debe traducir la palabra extranjera que se está aprendiendo.
+Para el aprendizaje de idiomas, crea intencionadamente comprensión, producción y uso en contexto según el objetivo pedido. Cada lengua y dirección debe tener su propio identificador y progreso. Incluye artículos, género, formas y contexto cuando sean necesarios; admite alternativas correctas. Los ejemplos de otros idiomas no deben aparecer si no pertenecen a la lección.
 
-Ejemplos:
-— Castellano → inglés: «Hace frío» → «It's cold»; también es válida «It is cold».
-— Inglés → castellano: «It's cold» → «Hace frío».
-— Castellano → francés: «la casa» → «la maison».
-— Francés → castellano: «la maison» → «la casa».
-— Una frase más: «La casa es pequeña» → «La maison est petite».
+7. Interfaz y versiones en tres idiomas
 
-Incluye artículos y género cuando sean relevantes, especialmente en francés, y frases breves con contexto. Acepta traducciones alternativas correctas. No elimines contexto para conseguir respuestas artificialmente únicas.
+Incluye Galego, Castellano y English. Usa gallego al abrir por primera vez, salvo que se indique otro idioma inicial.
 
-7. Tres idiomas completos
+Traduce naturalmente las instrucciones, explicaciones, botones, preguntas, rúbricas, resultados e impresión, manteniendo contenido y dificultad equivalentes.
 
-Incluye Galego, Castellano y English, con gallego inicial salvo que yo indique otro idioma.
+Distingue la lengua de la interfaz del objeto de estudio en cualquier materia. Conserva las oraciones que se analizan, las citas, el vocabulario objetivo, las fórmulas, los símbolos y la notación que sean parte de la pregunta. Traduce las instrucciones que los acompañan sin transformar el ejercicio ni revelar su solución. Adapta convenciones locales solo cuando no cambien el significado.
 
-Traduce naturalmente todo: clasificación, apuntes, dibujos con texto, botones, preguntas, opciones, explicaciones, rúbricas, resultados e impresión. Mantén las mismas ideas, ejercicios y dificultad.
+En ejercicios de idiomas, cambiar la interfaz conserva la lengua que se aprende y la dirección de cada tarjeta. Para conceptos equivalentes, usa identificadores comunes entre interfaces; para objetivos distintos, usa identificadores separados.
 
-Cambiar de idioma conserva el mapa abierto, el ejercicio, las respuestas, el orden de opciones y el progreso. Usa identificadores comunes. Las frases ordenables deben resultar naturales y coincidir exactamente con la frase estudiada en cada idioma.
+Cambiar de idioma conserva el mapa abierto, la actividad, las respuestas, el orden y el progreso. Las frases ordenables deben ser naturales en su idioma objetivo y coincidir con lo estudiado.
 
-8. Impresión
+8. Impresión completa
 
-Ofrece estas salidas distintas:
-— Mapa mental: clasificación completa desplegada, solo categorías y nombres, con sus llaves.
-— Apuntes: clasificación al principio y todas las fichas del nivel elegido, agrupadas bajo sus categorías escritas.
-— Tabla comparativa: todos los elementos y sus características.
-— Examen de tabla: los huecos de la actividad seleccionada, con solucionario en otra página.
-— Tarjetas: pistas y respuestas, para recortar o plegar y repasar sin pantalla.
+Ofrece las salidas que correspondan a la lección:
+— Mapa: esquema completo, con categorías, etapas o nombres y relaciones esenciales.
+— Apuntes: esquema al principio y fichas del nivel elegido, bajo sus apartados escritos.
+— Tablas, secuencias o procedimientos: estructura completa de estudio.
+— Examen: actividades y huecos adecuados, con solucionario en otra página.
+— Tarjetas: pistas y respuestas para recortar o plegar.
 
-La impresión usa el idioma seleccionado. Los apartados plegados no desaparecen del papel. Conserva la jerarquía y la categoría de cada ficha; el color nunca debe ser la única pista. No confundas los apuntes de palabras clave con el contenido de los niveles superiores.
+Imprime en el idioma seleccionado y conserva el idioma de los elementos que sean objeto de estudio. Los apartados plegados en pantalla no desaparecen del papel. Mantén jerarquía, categorías y orden significativo; el color nunca debe ser la única pista.
 
-Diseña para A4 y blanco y negro. Evita cortar fichas o separar títulos de su contenido. Si incluyes un examen imprimible, coloca el solucionario aparte.
+Diseña para A4 y blanco y negro. Evita cortar fichas o separar títulos de su contenido. Imprime el nivel seleccionado, sin sustituir una explicación por sus palabras clave.
 
-9. Conservación y accesibilidad
+9. Conservación, autonomía y accesibilidad
 
 Entrega un HTML autónomo con CSS, JavaScript, datos y dibujos incorporados, sin dependencias externas necesarias para funcionar. Debe abrirse sin conexión.
 
-Incluye descarga del HTML, progreso local y exportación e importación de una copia del progreso. Valida las importaciones. Conserva el progreso anterior al actualizar. Centraliza contenidos y traducciones para ampliarlo otros años.
+Incluye descarga del HTML, progreso local y exportación e importación de una copia. Valida las importaciones. Usa una identidad estable propia para cada lección, de modo que dos temas no mezclen ni sobrescriban su progreso. Conserva datos compatibles en las actualizaciones de la misma lección.
 
-Adapta el diseño a móvil y ordenador, con teclado, botones accesibles, buen contraste y textos legibles.
+Centraliza contenido y traducciones para poder ampliarlos. Adapta el diseño a móvil y ordenador, con teclado, foco visible, botones accesibles y textos legibles.
+
+El archivo y sus recursos no deben depender de la carpeta o del repositorio de una lección anterior. Usa nombres nuevos y rutas portables. Solo integra una página o repositorio existente cuando el encargo lo indique.
 
 10. Revisión y entrega
 
-Prueba desplegables, niveles, ejercicios, traducciones, impresión y conservación del progreso. En tarjetas, verifica el ocultamiento de respuestas, los intervalos, las repeticiones, la práctica libre, los cambios de idioma, la recarga y las copias de progreso. Comprueba que todas las categorías y conceptos de las fotos estén representados y que cada pregunta pueda responderse con lo estudiado.
+Comprueba que todas las categorías, conceptos, relaciones y objetivos importantes de las fotos estén representados. Verifica que cada pregunta pueda responderse con lo estudiado y que no queden términos, ejemplos, preguntas, rutas o datos de otras lecciones.
 
-Entrega el HTML completo descargable y explica brevemente cómo usarlo. Si pido actualizar GitHub, publica la versión, verifica su despliegue y dame el enlace. Usa nombres nuevos y enlaces en minúsculas.
+Prueba mapa, niveles, actividades, idiomas, impresión y progreso. En tarjetas, verifica respuesta oculta, intervalos, repeticiones, práctica libre, cambio de interfaz, recarga y copias. Comprueba que traducir la interfaz conserva el objeto de estudio.
 
-Distingue lo que has verificado en el código de lo que has comprobado visualmente. No afirmes haber publicado o probado algo que no hayas podido verificar.
+Entrega el HTML completo descargable y explica brevemente cómo usarlo y qué estructura has detectado en esta lección. Si se ha pedido publicar o actualizar una web, realiza la publicación, verifica el despliegue y devuelve el enlace. Usa nombres nuevos de archivos y repositorios y enlaces propios en minúsculas.
+
+Distingue lo comprobado en el código de lo revisado visualmente. No afirmes haber publicado ni probado lo que no hayas podido verificar.
