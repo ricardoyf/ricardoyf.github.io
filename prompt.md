@@ -1,15 +1,25 @@
+INSTRUCCIONES PARA EL AGENTE QUE RECIBE ESTE ENLACE
+
+Usa las fotos del temario adjuntas al mensaje del usuario y las instrucciones completas de esta página para crear y entregar un HTML de estudio terminado.
+
+El enlace y las fotos son suficientes para empezar. Las fotos están en la conversación con el usuario. Identifica el tema a partir de ellas y aplica el método descrito aquí, sin necesitar acceso a conversaciones anteriores.
+
+No pidas al usuario que rellene el formulario de esta web ni que copie el prompt. Ese formulario y las demostraciones son opcionales. Usa los datos adicionales que el usuario haya indicado; para lo demás, aplica los valores y criterios que siguen. Pide aclaración únicamente si una ambigüedad o una parte ilegible impide cubrir contenido esencial; continúa con lo que puedas resolver.
+
+Entrega el archivo HTML completo y funcional, con el contenido desarrollado y los controles operativos. Una propuesta de estructura o un esqueleto con textos pendientes no completa el encargo.
+
 Crea, a partir de las fotos y documentos de esta lección, unos apuntes interactivos con estudio, práctica, examen y tarjetas de repaso dentro de un único archivo HTML. Deben servir ahora y poder recuperarse en cursos posteriores.
 
-Asignatura: [INDICAR O DEDUCIR DE LAS FOTOS]
-Tema: [INDICAR O DEDUCIR DE LAS FOTOS]
-Curso o edad: [INDICAR SI SE CONOCE]
-Idioma del material: [DETECTAR EN LAS FOTOS SI NO SE INDICA]
-Idioma inicial de la interfaz: [GALLEGO, SALVO QUE SE INDIQUE OTRO]
-Repositorio o página de destino, si corresponde: [INDICAR]
+Asignatura: deducir de las fotos, salvo indicación del usuario.
+Tema: deducir de las fotos, salvo indicación del usuario.
+Curso o edad: usar el indicado; si falta, ajustar al nivel del material.
+Idioma del material: detectar en las fotos, salvo indicación del usuario.
+Idioma inicial de la interfaz: gallego, salvo indicación del usuario.
+Repositorio o página de destino: solo si el usuario lo indica; en otro caso, entregar el archivo HTML.
 
 PRIORIDAD: PRIMERO ORGANIZAR Y CLASIFICAR; DESPUÉS PROFUNDIZAR
 
-Esta es una plantilla independiente del temario. Conserva el método de estudio y adapta todo el contenido a la nueva lección. Obtén de las fuentes sus categorías, conceptos, relaciones, vocabulario, dibujos, preguntas, respuestas y tarjetas. Los ejemplos de un configurador o de trabajos anteriores no forman parte del material de estudio. No incorpores su contenido salvo petición expresa.
+Esta es una plantilla independiente del temario. Conserva el método de estudio y adapta todo el contenido a la nueva lección. Obtén de las fuentes sus categorías, conceptos, relaciones, vocabulario, dibujos, preguntas, respuestas y tarjetas. Las demostraciones opcionales de esta página y los ejemplos de trabajos anteriores no forman parte del material de estudio. No incorpores su contenido salvo petición expresa.
 
 1. Analiza la lección y respeta las fuentes
 
